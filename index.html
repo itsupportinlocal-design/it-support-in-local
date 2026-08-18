@@ -1,69 +1,766 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="IT Support in Local - Remote IT support across India and on-site support in Odisha.">
-<title>IT Support in Local | Remote & On-Site IT Support</title>
-<style>
-:root{--blue:#0b5cff;--dark:#071a3b;--green:#16a34a;--light:#f5f8ff;--text:#172033;--muted:#5d6878;--border:#dce4f0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
-header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10}.nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0}.logo{font-size:20px;font-weight:800}.navlinks{display:flex;gap:20px;font-size:14px;font-weight:700}.navlinks a:hover{color:#9fc0ff}
-.hero{background:linear-gradient(135deg,#071a3b,#0b5cff);color:#fff;padding:80px 0}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}.eyebrow{font-weight:800}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:10px 0 18px}.hero h1 span{color:#bcd2ff}.hero p{font-size:19px}.hero-box{background:#fff;color:var(--text);border-radius:20px;padding:26px;box-shadow:0 18px 45px #0003}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800}.btn.primary{background:#fff;color:var(--blue)}.btn.green{background:var(--green);color:#fff}
-.section{padding:70px 0}.section.alt{background:var(--light)}h2{text-align:center;font-size:34px;margin:0 0 10px}.lead{text-align:center;max-width:760px;margin:0 auto 35px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:25px;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:0 8px 25px #0b12200d}.icon{font-size:30px}
-.price-wrap{overflow-x:auto;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 8px 25px #0b12200d}table{width:100%;min-width:720px;border-collapse:collapse}th{background:#0b3e91;color:#fff;text-align:left;padding:15px}td{padding:15px;border-bottom:1px solid var(--border);vertical-align:top}.price{font-weight:800;color:#0b3e91;white-space:nowrap}.price-note{text-align:center;color:var(--muted);font-size:14px}
-.hours{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:auto}.hours-card{text-align:center;background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 8px 25px #0b12200d}.hours-card h3{color:#0b3e91}.hours-time{font-size:22px;font-weight:800}.area{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.pill{background:#fff;border:1px solid #d9e1ee;border-radius:999px;padding:9px 14px;font-weight:700}
-.contact{background:var(--dark);color:#fff}.contactbox{text-align:center}footer{background:#050a13;color:#b9c1cd;text-align:center;padding:24px;font-size:14px}
-@media(max-width:800px){.navlinks{display:none}.hero-grid,.hours{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero{padding:60px 0}.section{padding:55px 0}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IT Support in Local - Remote IT support across India and on-site IT support in selected locations of Odisha. Computer, laptop, printer, Wi-Fi, network, CCTV and software support.">
+  <meta name="keywords" content="IT support Odisha, computer repair Keonjhar, laptop support, printer support, WiFi setup, network support, remote IT support India">
+  <meta name="theme-color" content="#071a3b">
+  <title>IT Support in Local | Remote & On-Site IT Support</title>
+
+  <style>
+    :root{
+      --navy:#071a3b;
+      --blue:#0b5cff;
+      --blue2:#0b3e91;
+      --orange:#ff8a00;
+      --green:#16a34a;
+      --light:#f5f8ff;
+      --text:#172033;
+      --muted:#647084;
+      --border:#dfe6f1;
+      --white:#fff;
+      --shadow:0 12px 35px rgba(7,26,59,.09);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1140px,92%);margin:auto}
+
+    /* Header */
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(7,26,59,.97);
+      color:#fff;
+      box-shadow:0 3px 20px rgba(0,0,0,.15);
+    }
+    .nav{
+      min-height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand img{
+      width:52px;
+      height:52px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:12px;
+    }
+    .brand-name{
+      font-size:18px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .brand-name span{color:#ff9a18}
+    .navlinks{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      font-size:14px;
+      font-weight:700;
+    }
+    .navlinks a:hover{color:#8eb6ff}
+    .menu-btn{
+      display:none;
+      border:1px solid #ffffff44;
+      background:transparent;
+      color:#fff;
+      border-radius:8px;
+      padding:8px 11px;
+      cursor:pointer;
+    }
+
+    /* Hero */
+    .hero{
+      color:#fff;
+      background:
+        radial-gradient(circle at 85% 20%,rgba(255,138,0,.22),transparent 28%),
+        linear-gradient(135deg,#061633 0%,#0b3e91 55%,#0b5cff 100%);
+      padding:70px 0 80px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:45px;
+      align-items:center;
+    }
+    .hero-logo{
+      width:min(100%,500px);
+      max-height:280px;
+      object-fit:contain;
+      object-position:left center;
+      margin-bottom:10px;
+    }
+    .eyebrow{
+      color:#ffb13b;
+      font-weight:800;
+      letter-spacing:.6px;
+      font-size:14px;
+      margin:0 0 10px;
+    }
+    h1{
+      font-size:clamp(38px,6vw,64px);
+      line-height:1.02;
+      margin:0 0 18px;
+    }
+    .hero-copy{
+      font-size:19px;
+      color:#e7efff;
+      max-width:690px;
+      margin:0;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:28px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:13px 19px;
+      border-radius:10px;
+      font-weight:800;
+      border:0;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-green{background:var(--green);color:#fff}
+    .btn-white{background:#fff;color:var(--blue)}
+    .btn-blue{background:var(--blue);color:#fff}
+    .btn-orange{background:var(--orange);color:#111}
+    .hero-card{
+      background:#fff;
+      color:var(--text);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 22px 60px rgba(0,0,0,.22);
+    }
+    .hero-card h3{margin:0 0 15px;color:var(--blue2)}
+    .quick-list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .quick-list li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding:10px 0;
+      border-bottom:1px solid var(--border);
+    }
+    .quick-list li:last-child{border-bottom:0}
+    .check{color:var(--green);font-weight:900}
+
+    /* Common */
+    section{scroll-margin-top:80px}
+    .section{padding:75px 0}
+    .section.alt{background:var(--light)}
+    .section-title{
+      text-align:center;
+      font-size:35px;
+      margin:0 0 10px;
+    }
+    .lead{
+      text-align:center;
+      max-width:780px;
+      margin:0 auto 38px;
+      color:var(--muted);
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+    .card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:17px;
+      padding:25px;
+      box-shadow:var(--shadow);
+    }
+    .card:hover{box-shadow:0 18px 42px rgba(7,26,59,.13)}
+    .icon{
+      width:50px;
+      height:50px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-size:25px;
+      background:#eaf1ff;
+      margin-bottom:16px;
+    }
+    .card h3{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted)}
+
+    /* Feature strip */
+    .feature-strip{
+      margin-top:-28px;
+      position:relative;
+      z-index:2;
+    }
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:0;
+      background:#fff;
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--border);
+      overflow:hidden;
+    }
+    .feature{
+      text-align:center;
+      padding:22px 14px;
+      border-right:1px solid var(--border);
+    }
+    .feature:last-child{border-right:0}
+    .feature strong{display:block;color:var(--blue2);font-size:16px}
+    .feature span{font-size:13px;color:var(--muted)}
+
+    /* Pricing */
+    .table-wrap{
+      overflow-x:auto;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:17px;
+      box-shadow:var(--shadow);
+    }
+    table{width:100%;min-width:760px;border-collapse:collapse}
+    th{
+      background:var(--blue2);
+      color:#fff;
+      text-align:left;
+      padding:15px;
+    }
+    td{
+      padding:15px;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+    }
+    tr:last-child td{border-bottom:0}
+    .price{font-weight:900;color:var(--blue2);white-space:nowrap}
+    .note{text-align:center;color:var(--muted);font-size:14px;margin:14px 0 0}
+
+    /* Hours */
+    .hours-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      max-width:900px;
+      margin:auto;
+    }
+    .hours-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:28px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
+    .hours-card h3{color:var(--blue2);margin:6px 0 14px}
+    .time-row{
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      padding:12px 0;
+      border-bottom:1px solid var(--border);
+    }
+    .time-row:last-child{border-bottom:0}
+    .time{font-weight:900}
+
+    /* Areas */
+    .areas{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+    .pill{
+      padding:10px 15px;
+      background:#fff;
+      border:1px solid #d4ddeb;
+      border-radius:999px;
+      font-weight:800;
+      color:var(--blue2);
+    }
+    .remote-banner{
+      margin:0 auto 30px;
+      max-width:800px;
+      background:#eaf7ef;
+      border:1px solid #b9e4c8;
+      border-radius:14px;
+      padding:16px;
+      text-align:center;
+    }
+
+    /* Process */
+    .steps{counter-reset:step}
+    .step{
+      position:relative;
+      padding-left:70px;
+    }
+    .step::before{
+      counter-increment:step;
+      content:counter(step);
+      position:absolute;
+      left:0;
+      top:0;
+      width:48px;
+      height:48px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--blue);
+      color:#fff;
+      font-weight:900;
+      font-size:20px;
+    }
+
+    /* FAQ */
+    .faq{max-width:850px;margin:auto}
+    details{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      margin-bottom:12px;
+      padding:16px 18px;
+    }
+    summary{font-weight:800;cursor:pointer}
+    details p{color:var(--muted);margin:12px 0 0}
+
+    /* Contact */
+    .contact{
+      background:var(--navy);
+      color:#fff;
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:30px;
+      align-items:start;
+    }
+    .contact h2{text-align:left}
+    .contact-copy{color:#dce7ff}
+    .contact-list{
+      list-style:none;
+      padding:0;
+      margin:25px 0 0;
+      display:grid;
+      gap:12px;
+    }
+    .contact-list a{color:#fff}
+    .contact-list a:hover{text-decoration:underline}
+    .form{
+      background:#fff;
+      color:var(--text);
+      padding:25px;
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-size:13px;font-weight:800;margin-bottom:6px}
+    input,select,textarea{
+      width:100%;
+      border:1px solid #ccd6e5;
+      border-radius:9px;
+      padding:11px 12px;
+      outline:none;
+      background:#fff;
+    }
+    input:focus,select:focus,textarea:focus{border-color:var(--blue)}
+    textarea{min-height:110px;resize:vertical}
+    .field-full{grid-column:1/-1}
+    .form .btn{width:100%;margin-top:15px}
+
+    /* Floating WhatsApp */
+    .floating-wa{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:999;
+      background:var(--green);
+      color:#fff;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      font-size:27px;
+      box-shadow:0 8px 25px rgba(0,0,0,.25);
+    }
+
+    footer{
+      background:#050a13;
+      color:#b9c1cd;
+      padding:25px 0;
+      text-align:center;
+      font-size:14px;
+    }
+    footer a{color:#fff}
+
+    @media(max-width:900px){
+      .hero-grid,.contact-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .feature-grid{grid-template-columns:1fr 1fr}
+      .feature:nth-child(2){border-right:0}
+      .feature:nth-child(-n+2){border-bottom:1px solid var(--border)}
+    }
+
+    @media(max-width:700px){
+      .navlinks{display:none}
+      .menu-btn{display:block}
+      .nav.mobile-open .navlinks{
+        display:flex;
+        position:absolute;
+        left:4%;
+        right:4%;
+        top:70px;
+        background:var(--navy);
+        padding:16px;
+        border-radius:0 0 14px 14px;
+        flex-direction:column;
+        gap:14px;
+      }
+      .grid-3,.hours-grid,.form-grid{grid-template-columns:1fr}
+      .field-full{grid-column:auto}
+      .feature-grid{grid-template-columns:1fr 1fr}
+      .feature:nth-child(2){border-right:0}
+      .feature:nth-child(3),.feature:nth-child(4){border-bottom:0}
+      .feature:nth-child(3){border-right:1px solid var(--border)}
+      .hero{padding:55px 0 65px}
+      .hero-logo{max-height:210px}
+      .section{padding:58px 0}
+      .section-title{font-size:30px}
+      .brand-name{font-size:16px}
+    }
+  </style>
 </head>
+
 <body>
-<header><div class="container nav"><div class="logo">IT Support in Local</div><nav class="navlinks"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#hours">Support Hours</a><a href="#areas">Service Areas</a><a href="#contact">Contact</a></nav></div></header>
 
-<section class="hero"><div class="container hero-grid"><div>
-<p class="eyebrow">REMOTE SUPPORT ACROSS INDIA • ON-SITE SUPPORT IN ODISHA</p>
-<h1>Professional IT Support <span>for Home, Shop & Office</span></h1>
-<p>Computer, laptop, Wi-Fi, printer, software and network support. Get reliable help remotely or request an on-site visit.</p>
-<div class="buttons"><a class="btn green" href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support." target="_blank">WhatsApp for Support</a><a class="btn primary" href="#pricing">View Charges</a></div>
-</div><div class="hero-box"><h3>Why Choose IT Support in Local?</h3><ul><li>Fast and reliable support</li><li>Affordable service charges</li><li>Remote support across India</li><li>On-site support in selected Odisha locations</li><li>Home, shop and office IT support</li></ul></div></div></section>
+<header>
+  <div class="container nav" id="mainNav">
+    <a class="brand" href="#home" aria-label="IT Support in Local home">
+      <img src="logo.png" alt="IT Support in Local logo">
+      <div class="brand-name">IT Support <span>in Local</span></div>
+    </a>
 
-<section class="section" id="services"><div class="container"><h2>Our IT Services</h2><p class="lead">Practical IT support for computers, connectivity, printers, software, networks and everyday technology problems.</p><div class="grid">
-<div class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Troubleshooting, setup, Windows problems, performance issues and general computer assistance.</p></div>
-<div class="card"><div class="icon">📶</div><h3>Wi-Fi & Router Setup</h3><p>Router setup, Wi-Fi configuration, connectivity problems and basic signal troubleshooting.</p></div>
-<div class="card"><div class="icon">🖨️</div><h3>Printer Support</h3><p>Printer installation, driver setup, connection problems and basic printing troubleshooting.</p></div>
-<div class="card"><div class="icon">🧩</div><h3>Windows & Software Support</h3><p>Operating system problems, software errors, installation, updates and configuration.</p></div>
-<div class="card"><div class="icon">🌐</div><h3>LAN & Network Support</h3><p>Network issue diagnosis, basic LAN setup and troubleshooting for homes, shops and offices.</p></div>
-<div class="card"><div class="icon">📹</div><h3>CCTV Troubleshooting</h3><p>CCTV connectivity, viewing, recording and network-related troubleshooting.</p></div>
-</div></div></section>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
 
-<section class="section alt" id="pricing"><div class="container"><h2>Our Services & Charges</h2><p class="lead">Starting charges are shown below. Final charges may vary depending on the work, location and parts required.</p>
-<div class="price-wrap"><table><thead><tr><th>Service</th><th>Starting Charge</th><th>Description</th></tr></thead><tbody>
-<tr><td><strong>Home / Office Visit</strong></td><td class="price">₹200 – ₹300</td><td>On-site visit charge within the service area.</td></tr>
-<tr><td><strong>Basic Troubleshooting</strong></td><td class="price">₹300 – ₹500</td><td>General checkup and basic problem resolution.</td></tr>
-<tr><td><strong>Windows / Software Troubleshooting</strong></td><td class="price">₹400 – ₹700</td><td>OS issues, software errors, installation and updates.</td></tr>
-<tr><td><strong>Printer Configuration</strong></td><td class="price">₹300 – ₹500</td><td>Printer installation, driver setup and troubleshooting.</td></tr>
-<tr><td><strong>Wi-Fi / Router Setup</strong></td><td class="price">₹400 – ₹700</td><td>Router setup, Wi-Fi configuration and signal optimization.</td></tr>
-<tr><td><strong>LAN / Network Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>Network issue diagnosis and problem fixing.</td></tr>
-<tr><td><strong>CCTV Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>CCTV connectivity, recording, viewing and network issues.</td></tr>
-<tr><td><strong>Full LAN Setup</strong></td><td class="price">Contact for quotation</td><td>Complete office/home LAN setup with wiring and configuration.</td></tr>
-<tr><td><strong>Monthly IT Support / AMC</strong></td><td class="price">₹1,500 – ₹5,000+</td><td>Regular support, maintenance and priority service.</td></tr>
-</tbody></table></div>
-<p class="price-note">Note: Hardware and parts costs are additional. Final charges may vary depending on the work and location.</p>
-<div class="buttons" style="justify-content:center"><a class="btn green" href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support." target="_blank">Ask About a Service</a></div>
-</div></section>
+    <nav class="navlinks">
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#pricing" onclick="closeMenu()">Pricing</a>
+      <a href="#hours" onclick="closeMenu()">Hours</a>
+      <a href="#areas" onclick="closeMenu()">Areas</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<section class="section" id="hours"><div class="container"><h2>Support Timings</h2><p class="lead">We are available on call and WhatsApp during support hours.</p><div class="hours">
-<div class="hours-card"><div class="icon">📅</div><h3>Monday to Saturday</h3><p>Morning Support</p><div class="hours-time">7:00 AM – 9:00 AM</div><p>Evening Support</p><div class="hours-time">6:30 PM – 9:00 PM</div></div>
-<div class="hours-card"><div class="icon">📅</div><h3>Sunday</h3><p>Full-Day Support</p><div class="hours-time">10:00 AM – 6:00 PM</div><p>Call or WhatsApp during these hours for support.</p></div>
-</div></div></section>
+<main>
 
-<section class="section alt" id="areas"><div class="container"><h2>Where We Provide Support</h2><p class="lead"><strong>Remote support:</strong> Across India<br><strong>On-site visits:</strong> Selected locations in Odisha</p><div class="area">
-<span class="pill">Keonjhar</span><span class="pill">Balasore</span><span class="pill">Bhadrak</span><span class="pill">Mayurbhanj</span><span class="pill">Cuttack</span><span class="pill">Jharsuguda</span><span class="pill">Bhubaneswar</span><span class="pill">Puri</span>
-</div></div></section>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-<section class="section contact" id="contact"><div class="container contactbox"><h2>Need IT Support?</h2><p>Contact us for remote support across India or an on-site visit in our Odisha service areas.</p><div class="buttons" style="justify-content:center"><a class="btn green" href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support." target="_blank">Chat on WhatsApp</a><a class="btn primary" href="tel:+918144187490">Call for Support</a></div></div></section>
-<footer>© 2026 IT Support in Local. Remote IT Support Across India | On-Site Support in Odisha.</footer>
-</body></html>
+    <div>
+      <img class="hero-logo" src="logo.png" alt="IT Support in Local - Your Local Tech Partner">
+
+      <p class="eyebrow">REMOTE SUPPORT ACROSS INDIA • ON-SITE SUPPORT IN ODISHA</p>
+
+      <h1>Professional IT Support for Home, Shop & Office</h1>
+
+      <p class="hero-copy">
+        Fast, reliable and affordable IT support for computers, laptops,
+        printers, Wi-Fi, networks, software and CCTV-related troubleshooting.
+        Get support remotely or request an on-site visit.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-green"
+           href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support."
+           target="_blank" rel="noopener">
+          💬 WhatsApp Support
+        </a>
+        <a class="btn btn-white" href="tel:+918144187490">📞 Call 8144187490</a>
+        <a class="btn btn-orange" href="#pricing">View Charges</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Why choose IT Support in Local?</h3>
+      <ul class="quick-list">
+        <li><span class="check">✓</span><span>Remote support available across India</span></li>
+        <li><span class="check">✓</span><span>On-site support in selected Odisha locations</span></li>
+        <li><span class="check">✓</span><span>Support for home, shop and office</span></li>
+        <li><span class="check">✓</span><span>Clear starting charges</span></li>
+        <li><span class="check">✓</span><span>Call and WhatsApp support</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="container feature-strip">
+  <div class="feature-grid">
+    <div class="feature"><strong>⚡ Fast Service</strong><span>Quick response</span></div>
+    <div class="feature"><strong>🤝 Reliable Support</strong><span>Practical solutions</span></div>
+    <div class="feature"><strong>₹ Affordable</strong><span>Clear starting prices</span></div>
+    <div class="feature"><strong>📍 On-Site Service</strong><span>Selected Odisha areas</span></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="container">
+    <h2 class="section-title">Our IT Services</h2>
+    <p class="lead">One local IT support partner for everyday technology problems at home, in shops and in offices.</p>
+
+    <div class="grid-3">
+      <div class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Setup, troubleshooting, Windows problems, performance issues and general computer assistance.</p></div>
+      <div class="card"><div class="icon">📶</div><h3>Wi-Fi & Router Setup</h3><p>Router setup, Wi-Fi configuration, connectivity problems and basic signal troubleshooting.</p></div>
+      <div class="card"><div class="icon">🖨️</div><h3>Printer Support</h3><p>Printer installation, drivers, connection problems and basic printing troubleshooting.</p></div>
+      <div class="card"><div class="icon">🧩</div><h3>Windows & Software</h3><p>Operating system problems, software installation, updates, errors and basic configuration.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>LAN & Network Support</h3><p>Network diagnosis, basic LAN setup, connectivity and troubleshooting for small offices and homes.</p></div>
+      <div class="card"><div class="icon">📹</div><h3>CCTV Troubleshooting</h3><p>Basic CCTV connectivity, viewing, recording and network-related troubleshooting.</p></div>
+      <div class="card"><div class="icon">💾</div><h3>Data Backup Solutions</h3><p>Basic backup planning and setup for important documents and business data.</p></div>
+      <div class="card"><div class="icon">📄</div><h3>MS Office Support</h3><p>Basic help with Microsoft Word, Excel, PowerPoint and common Office issues.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Remote IT Support</h3><p>Remote troubleshooting across India when an on-site visit is not required.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Our Services & Charges</h2>
+    <p class="lead">Starting charges. Final charges can vary depending on the work, location, time and hardware/parts required.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Starting Charge</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Home / Office Visit</strong></td><td class="price">₹200 – ₹300</td><td>On-site visit charge within the service area.</td></tr>
+          <tr><td><strong>Basic Troubleshooting</strong></td><td class="price">₹300 – ₹500</td><td>General checkup and basic problem resolution.</td></tr>
+          <tr><td><strong>Windows / Software Troubleshooting</strong></td><td class="price">₹400 – ₹700</td><td>OS issues, software errors, installation and updates.</td></tr>
+          <tr><td><strong>Printer Configuration</strong></td><td class="price">₹300 – ₹500</td><td>Printer installation, driver setup and troubleshooting.</td></tr>
+          <tr><td><strong>Wi-Fi / Router Setup</strong></td><td class="price">₹400 – ₹700</td><td>Router setup, Wi-Fi configuration and signal troubleshooting.</td></tr>
+          <tr><td><strong>LAN / Network Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>Network issue diagnosis and problem fixing.</td></tr>
+          <tr><td><strong>CCTV Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>CCTV connectivity, viewing, recording and network issues.</td></tr>
+          <tr><td><strong>Full LAN Setup</strong></td><td class="price">Contact for quotation</td><td>Complete home/office LAN setup with wiring and configuration.</td></tr>
+          <tr><td><strong>Monthly IT Support / AMC</strong></td><td class="price">₹1,500 – ₹5,000+</td><td>Regular support, maintenance and priority service.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">Hardware and parts costs are additional. Please contact us for a quotation for larger jobs.</p>
+  </div>
+</section>
+
+<section class="section" id="hours">
+  <div class="container">
+    <h2 class="section-title">Support Timings</h2>
+    <p class="lead">Call or WhatsApp during support hours.</p>
+
+    <div class="hours-grid">
+      <div class="hours-card">
+        <div class="icon" style="margin:0 auto 12px">📅</div>
+        <h3>Monday to Saturday</h3>
+        <div class="time-row"><span>Morning Support</span><span class="time">7:00 AM – 9:00 AM</span></div>
+        <div class="time-row"><span>Evening Support</span><span class="time">6:30 PM – 9:00 PM</span></div>
+      </div>
+
+      <div class="hours-card">
+        <div class="icon" style="margin:0 auto 12px">☀️</div>
+        <h3>Sunday</h3>
+        <div class="time-row"><span>Full-Day Support</span><span class="time">10:00 AM – 6:00 PM</span></div>
+        <p style="color:var(--muted);margin-bottom:0">Availability may depend on the type and location of the job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="areas">
+  <div class="container">
+    <h2 class="section-title">Service Areas</h2>
+
+    <div class="remote-banner">
+      <strong>🌐 Remote IT Support:</strong> Available across India
+    </div>
+
+    <p class="lead">On-site visits are available in selected locations of Odisha.</p>
+
+    <div class="areas">
+      <span class="pill">Keonjhar</span>
+      <span class="pill">Balasore</span>
+      <span class="pill">Bhadrak</span>
+      <span class="pill">Mayurbhanj</span>
+      <span class="pill">Cuttack</span>
+      <span class="pill">Jharsuguda</span>
+      <span class="pill">Bhubaneswar</span>
+      <span class="pill">Puri</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <p class="lead">A simple process from your first message to IT support.</p>
+
+    <div class="grid-3 steps">
+      <div class="card step"><h3>Contact Us</h3><p>Call or WhatsApp and tell us what problem you are facing.</p></div>
+      <div class="card step"><h3>Choose Remote or Visit</h3><p>We identify whether the issue can be handled remotely or needs an on-site visit.</p></div>
+      <div class="card step"><h3>Get Support</h3><p>We troubleshoot the issue and explain the solution or next steps.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Do you provide remote support outside Odisha?</summary>
+        <p>Yes. Remote IT support is available across India, subject to the type of issue and the tools required.</p>
+      </details>
+      <details>
+        <summary>Do you provide on-site visits?</summary>
+        <p>Yes. On-site support is available in our listed Odisha service areas, depending on availability.</p>
+      </details>
+      <details>
+        <summary>Are hardware and spare parts included in the service charge?</summary>
+        <p>No. Hardware, spare parts and other materials are additional when required.</p>
+      </details>
+      <details>
+        <summary>Can I request a quotation for a larger job?</summary>
+        <p>Yes. Contact us on WhatsApp or by phone for a job assessment and quotation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2 class="section-title">Need IT Support?</h2>
+      <p class="contact-copy">
+        Tell us what you need help with. You can contact IT Support in Local
+        by phone, WhatsApp or email.
+      </p>
+
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+918144187490">8144187490</a></li>
+        <li>💬 <a href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support." target="_blank" rel="noopener">WhatsApp: 8144187490</a></li>
+        <li>✉️ <a href="mailto:itsupportinlocal@gmail.com">itsupportinlocal@gmail.com</a></li>
+        <li>📍 Remote: India-wide | On-site: Selected Odisha locations</li>
+      </ul>
+    </div>
+
+    <form class="form" onsubmit="sendWhatsApp(event)">
+      <h3 style="margin-top:0">Request IT Support</h3>
+
+      <div class="form-grid">
+        <div>
+          <label for="name">Your Name</label>
+          <input id="name" required placeholder="Enter your name">
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" required type="tel" placeholder="Enter your phone">
+        </div>
+
+        <div class="field-full">
+          <label for="service">Service Needed</label>
+          <select id="service">
+            <option>Computer / Laptop Support</option>
+            <option>Wi-Fi / Router Setup</option>
+            <option>Printer Support</option>
+            <option>Windows / Software Support</option>
+            <option>LAN / Network Support</option>
+            <option>CCTV Troubleshooting</option>
+            <option>Remote IT Support</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field-full">
+          <label for="message">Describe Your Problem</label>
+          <textarea id="message" placeholder="Tell us briefly about your IT problem"></textarea>
+        </div>
+      </div>
+
+      <button class="btn btn-green" type="submit">Send Request on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<a class="floating-wa"
+   href="https://wa.me/918144187490?text=Hello%2C%20I%20need%20IT%20support."
+   target="_blank" rel="noopener"
+   aria-label="WhatsApp IT Support">💬</a>
+
+<footer>
+  <div class="container">
+    <div><strong>IT Support in Local</strong> — Your Local Tech Partner</div>
+    <div style="margin-top:6px">Remote IT Support Across India | On-Site Support in Odisha</div>
+    <div style="margin-top:8px">
+      <a href="tel:+918144187490">8144187490</a> ·
+      <a href="mailto:itsupportinlocal@gmail.com">itsupportinlocal@gmail.com</a>
+    </div>
+    <div style="margin-top:12px">© 2026 IT Support in Local. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu(){
+    document.getElementById("mainNav").classList.toggle("mobile-open");
+  }
+
+  function closeMenu(){
+    document.getElementById("mainNav").classList.remove("mobile-open");
+  }
+
+  function sendWhatsApp(event){
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+    const text =
+      "Hello, I need IT support.%0A%0A" +
+      "Name: " + encodeURIComponent(name) + "%0A" +
+      "Phone: " + encodeURIComponent(phone) + "%0A" +
+      "Service: " + encodeURIComponent(service) + "%0A" +
+      "Problem: " + encodeURIComponent(message || "Not provided");
+
+    window.open("https://wa.me/918144187490?text=" + text, "_blank");
+  }
+</script>
+
+</body>
+</html>
