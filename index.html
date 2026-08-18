@@ -1,105 +1,69 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IT Support in Local - Remote IT support across India and on-site support in Odisha.">
-  <title>IT Support in Local | Remote & On-Site IT Support</title>
-  <style>
-    :root{--blue:#0b5cff;--dark:#0b1220;--light:#f5f8ff;--text:#1b2430;--green:#16a34a}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-    a{text-decoration:none;color:inherit}.container{width:min(1100px,92%);margin:auto}
-    header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10}.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
-    .logo{font-weight:800;font-size:20px}.navlinks{display:flex;gap:20px;font-size:14px}.hero{background:linear-gradient(135deg,#071a3b,#0b5cff);color:#fff;padding:90px 0}
-    .hero h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:0 0 18px}.hero p{font-size:20px;max-width:720px}
-    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700}
-    .btn.primary{background:#fff;color:#0b5cff}.btn.green{background:var(--green);color:#fff}.section{padding:70px 0}.section.alt{background:var(--light)}
-    h2{text-align:center;font-size:34px;margin:0 0 12px}.lead{text-align:center;max-width:720px;margin:0 auto 36px;color:#5b6573}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;border:1px solid #e3e8f0;border-radius:16px;background:#fff;box-shadow:0 8px 25px #0b12200b}.icon{font-size:32px}
-    .area{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.pill{background:#fff;border:1px solid #d9e1ee;border-radius:999px;padding:9px 14px}
-    .contact{background:var(--dark);color:#fff}.contactbox{text-align:center}.contactbox h2{margin-bottom:16px}
-    footer{background:#050a13;color:#b9c1cd;text-align:center;padding:24px;font-size:14px}
-    @media(max-width:750px){.navlinks{display:none}.grid{grid-template-columns:1fr}.hero{padding:65px 0}.section{padding:55px 0}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="IT Support in Local - Remote IT support across India and on-site support in Odisha.">
+<title>IT Support in Local | Remote & On-Site IT Support</title>
+<style>
+:root{--blue:#0b5cff;--dark:#071a3b;--green:#16a34a;--light:#f5f8ff;--text:#172033;--muted:#5d6878;--border:#dce4f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10}.nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0}.logo{font-size:20px;font-weight:800}.navlinks{display:flex;gap:20px;font-size:14px;font-weight:700}.navlinks a:hover{color:#9fc0ff}
+.hero{background:linear-gradient(135deg,#071a3b,#0b5cff);color:#fff;padding:80px 0}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}.eyebrow{font-weight:800}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:10px 0 18px}.hero h1 span{color:#bcd2ff}.hero p{font-size:19px}.hero-box{background:#fff;color:var(--text);border-radius:20px;padding:26px;box-shadow:0 18px 45px #0003}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800}.btn.primary{background:#fff;color:var(--blue)}.btn.green{background:var(--green);color:#fff}
+.section{padding:70px 0}.section.alt{background:var(--light)}h2{text-align:center;font-size:34px;margin:0 0 10px}.lead{text-align:center;max-width:760px;margin:0 auto 35px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:25px;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:0 8px 25px #0b12200d}.icon{font-size:30px}
+.price-wrap{overflow-x:auto;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 8px 25px #0b12200d}table{width:100%;min-width:720px;border-collapse:collapse}th{background:#0b3e91;color:#fff;text-align:left;padding:15px}td{padding:15px;border-bottom:1px solid var(--border);vertical-align:top}.price{font-weight:800;color:#0b3e91;white-space:nowrap}.price-note{text-align:center;color:var(--muted);font-size:14px}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:auto}.hours-card{text-align:center;background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 8px 25px #0b12200d}.hours-card h3{color:#0b3e91}.hours-time{font-size:22px;font-weight:800}.area{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.pill{background:#fff;border:1px solid #d9e1ee;border-radius:999px;padding:9px 14px;font-weight:700}
+.contact{background:var(--dark);color:#fff}.contactbox{text-align:center}footer{background:#050a13;color:#b9c1cd;text-align:center;padding:24px;font-size:14px}
+@media(max-width:800px){.navlinks{display:none}.hero-grid,.hours{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero{padding:60px 0}.section{padding:55px 0}}
+</style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <div class="logo">IT Support in Local</div>
-    <nav class="navlinks">
-      <a href="#services">Services</a><a href="#areas">Service Areas</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<header><div class="container nav"><div class="logo">IT Support in Local</div><nav class="navlinks"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#hours">Support Hours</a><a href="#areas">Service Areas</a><a href="#contact">Contact</a></nav></div></header>
 
-<main>
-<section class="hero">
-  <div class="container">
-    <p style="font-weight:700">REMOTE SUPPORT ACROSS INDIA • ON-SITE SUPPORT IN ODISHA</p>
-    <h1>Reliable IT Support, When You Need It.</h1>
-    <p>Computer, laptop, Wi-Fi, printer and software support for homes and small businesses. Get help remotely or request an on-site visit.</p>
-    <div class="buttons">
-      <!-- Replace 918144187490 with your WhatsApp number including country code -->
-      <a class="btn green" href="https://wa.me/918144187490" target="_blank">WhatsApp for Support</a>
-      <a class="btn primary" href="#services">View Services</a>
-    </div>
-  </div>
-</section>
+<section class="hero"><div class="container hero-grid"><div>
+<p class="eyebrow">REMOTE SUPPORT ACROSS INDIA • ON-SITE SUPPORT IN ODISHA</p>
+<h1>Professional IT Support <span>for Home, Shop & Office</span></h1>
+<p>Computer, laptop, Wi-Fi, printer, software and network support. Get reliable help remotely or request an on-site visit.</p>
+<div class="buttons"><a class="btn green" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp for Support</a><a class="btn primary" href="#pricing">View Charges</a></div>
+</div><div class="hero-box"><h3>Why Choose IT Support in Local?</h3><ul><li>Fast and reliable support</li><li>Affordable service charges</li><li>Remote support across India</li><li>On-site support in selected Odisha locations</li><li>Home, shop and office IT support</li></ul></div></div></section>
 
-<section class="section" id="services">
-  <div class="container">
-    <h2>Our IT Services</h2>
-    <p class="lead">Practical IT help for computers, connectivity, printers and everyday software problems.</p>
-    <div class="grid">
-      <div class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Troubleshooting, setup, performance issues, Windows problems and general computer assistance.</p></div>
-      <div class="card"><div class="icon">📶</div><h3>Wi-Fi & Network Setup</h3><p>Router setup, Wi-Fi problems, basic home and small-office networking and connectivity troubleshooting.</p></div>
-      <div class="card"><div class="icon">🖨️</div><h3>Printer Support</h3><p>Printer installation, driver setup, connection problems and basic printing troubleshooting.</p></div>
-      <div class="card"><div class="icon">🧩</div><h3>Software Installation</h3><p>Installation and basic configuration of commonly used software, drivers and updates.</p></div>
-      <div class="card"><div class="icon">🛠️</div><h3>Remote IT Support</h3><p>Get help from anywhere in India for supported issues without waiting for an on-site visit.</p></div>
-      <div class="card"><div class="icon">📍</div><h3>On-Site IT Visit</h3><p>Local support by visit in selected Odisha cities and districts, subject to availability.</p></div>
-    </div>
-  </div>
-</section>
+<section class="section" id="services"><div class="container"><h2>Our IT Services</h2><p class="lead">Practical IT support for computers, connectivity, printers, software, networks and everyday technology problems.</p><div class="grid">
+<div class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Troubleshooting, setup, Windows problems, performance issues and general computer assistance.</p></div>
+<div class="card"><div class="icon">📶</div><h3>Wi-Fi & Router Setup</h3><p>Router setup, Wi-Fi configuration, connectivity problems and basic signal troubleshooting.</p></div>
+<div class="card"><div class="icon">🖨️</div><h3>Printer Support</h3><p>Printer installation, driver setup, connection problems and basic printing troubleshooting.</p></div>
+<div class="card"><div class="icon">🧩</div><h3>Windows & Software Support</h3><p>Operating system problems, software errors, installation, updates and configuration.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>LAN & Network Support</h3><p>Network issue diagnosis, basic LAN setup and troubleshooting for homes, shops and offices.</p></div>
+<div class="card"><div class="icon">📹</div><h3>CCTV Troubleshooting</h3><p>CCTV connectivity, viewing, recording and network-related troubleshooting.</p></div>
+</div></div></section>
 
-<section class="section alt" id="areas">
-  <div class="container">
-    <h2>Where We Provide Support</h2>
-    <p class="lead"><strong>Remote:</strong> Across India<br><strong>On-site:</strong> Selected locations in Odisha</p>
-    <div class="area">
-      <span class="pill">Keonjhar</span><span class="pill">Balasore</span><span class="pill">Bhadrak</span>
-      <span class="pill">Mayurbhanj</span><span class="pill">Cuttack</span><span class="pill">Jharsuguda</span>
-      <span class="pill">Bhubaneswar</span><span class="pill">Puri</span>
-    </div>
-  </div>
-</section>
+<section class="section alt" id="pricing"><div class="container"><h2>Our Services & Charges</h2><p class="lead">Starting charges are shown below. Final charges may vary depending on the work, location and parts required.</p>
+<div class="price-wrap"><table><thead><tr><th>Service</th><th>Starting Charge</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Home / Office Visit</strong></td><td class="price">₹200 – ₹300</td><td>On-site visit charge within the service area.</td></tr>
+<tr><td><strong>Basic Troubleshooting</strong></td><td class="price">₹300 – ₹500</td><td>General checkup and basic problem resolution.</td></tr>
+<tr><td><strong>Windows / Software Troubleshooting</strong></td><td class="price">₹400 – ₹700</td><td>OS issues, software errors, installation and updates.</td></tr>
+<tr><td><strong>Printer Configuration</strong></td><td class="price">₹300 – ₹500</td><td>Printer installation, driver setup and troubleshooting.</td></tr>
+<tr><td><strong>Wi-Fi / Router Setup</strong></td><td class="price">₹400 – ₹700</td><td>Router setup, Wi-Fi configuration and signal optimization.</td></tr>
+<tr><td><strong>LAN / Network Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>Network issue diagnosis and problem fixing.</td></tr>
+<tr><td><strong>CCTV Troubleshooting</strong></td><td class="price">₹500 – ₹1,000</td><td>CCTV connectivity, recording, viewing and network issues.</td></tr>
+<tr><td><strong>Full LAN Setup</strong></td><td class="price">Contact for quotation</td><td>Complete office/home LAN setup with wiring and configuration.</td></tr>
+<tr><td><strong>Monthly IT Support / AMC</strong></td><td class="price">₹1,500 – ₹5,000+</td><td>Regular support, maintenance and priority service.</td></tr>
+</tbody></table></div>
+<p class="price-note">Note: Hardware and parts costs are additional. Final charges may vary depending on the work and location.</p>
+<div class="buttons" style="justify-content:center"><a class="btn green" href="https://wa.me/91XXXXXXXXXX" target="_blank">Ask About a Service</a></div>
+</div></section>
 
-<section class="section">
-  <div class="container">
-    <h2>How It Works</h2>
-    <div class="grid">
-      <div class="card"><h3>1. Contact Us</h3><p>Tell us what IT problem you are facing and your location.</p></div>
-      <div class="card"><h3>2. Choose Remote or Visit</h3><p>We identify whether the issue can be handled remotely or needs an on-site visit.</p></div>
-      <div class="card"><h3>3. Get Support</h3><p>We troubleshoot the issue and explain the next steps clearly.</p></div>
-    </div>
-  </div>
-</section>
+<section class="section" id="hours"><div class="container"><h2>Support Timings</h2><p class="lead">We are available on call and WhatsApp during support hours.</p><div class="hours">
+<div class="hours-card"><div class="icon">📅</div><h3>Monday to Saturday</h3><p>Morning Support</p><div class="hours-time">7:00 AM – 9:00 AM</div><p>Evening Support</p><div class="hours-time">6:30 PM – 9:00 PM</div></div>
+<div class="hours-card"><div class="icon">📅</div><h3>Sunday</h3><p>Full-Day Support</p><div class="hours-time">10:00 AM – 6:00 PM</div><p>Call or WhatsApp during these hours for support.</p></div>
+</div></div></section>
 
-<section class="section contact" id="contact">
-  <div class="container contactbox">
-    <h2>Need IT Support?</h2>
-    <p>Contact us for remote support across India or an on-site visit in our Odisha service areas.</p>
-    <!-- Replace 918144187490 in BOTH WhatsApp links before publishing -->
-    <div class="buttons" style="justify-content:center">
-      <a class="btn green" href="https://wa.me/918144187490" target="_blank">Chat on WhatsApp</a>
-      <a class="btn primary" href="tel:+918144187490">Call for Support</a>
-    </div>
-  </div>
-</section>
-</main>
+<section class="section alt" id="areas"><div class="container"><h2>Where We Provide Support</h2><p class="lead"><strong>Remote support:</strong> Across India<br><strong>On-site visits:</strong> Selected locations in Odisha</p><div class="area">
+<span class="pill">Keonjhar</span><span class="pill">Balasore</span><span class="pill">Bhadrak</span><span class="pill">Mayurbhanj</span><span class="pill">Cuttack</span><span class="pill">Jharsuguda</span><span class="pill">Bhubaneswar</span><span class="pill">Puri</span>
+</div></div></section>
 
-<footer>
-  © 2026 IT Support in Local. Remote IT Support Across India | On-Site Support in Odisha.
-</footer>
-</body>
-</html>
+<section class="section contact" id="contact"><div class="container contactbox"><h2>Need IT Support?</h2><p>Contact us for remote support across India or an on-site visit in our Odisha service areas.</p><div class="buttons" style="justify-content:center"><a class="btn green" href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a><a class="btn primary" href="tel:+91XXXXXXXXXX">Call for Support</a></div></div></section>
+<footer>© 2026 IT Support in Local. Remote IT Support Across India | On-Site Support in Odisha.</footer>
+</body></html>
